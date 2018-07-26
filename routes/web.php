@@ -24,3 +24,5 @@ Route::post('/createQuestion', 'QuestionController@store');
 Route::get('/all-questions', 'QuestionController@all');
 
 Route::get('/calendar', 'CalendarController@getCalendar');
+
+Route::get('/add-class', 'AddClassController@newClass');
