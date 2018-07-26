@@ -26,3 +26,5 @@ Route::get('/all-questions', 'QuestionController@all');
 Route::get('/calendar', 'CalendarController@getCalendar');
 
 Route::get('/add-class', 'AddClassController@newClass');
+
+Route::get('/handle-add-class', 'AddClassController@handleRequest');

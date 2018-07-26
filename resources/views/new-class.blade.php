@@ -5,14 +5,14 @@
 
         <h1>Add a new class!</h1>
 
-        <input type="text" placeholder="Class Title" name="clas_title">
 
+        {{ Form::open(array('url' => 'handle-add-class'))  }}
 
-        <button type="submit">Submit</button>
+        {{ Form::label('clas_title', 'Class Title') }}
+        {{ Form::input('text', 'class_title', '', ['class' => 'input-title']) }}
 
+        {{ Form::submit('Submit!')  }}
 
-        {{ Form::open(array('url' => 'add-class')) }}
-        //
         {{ Form::close() }}
 
     </div>
